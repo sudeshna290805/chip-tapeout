@@ -1,40 +1,38 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
   wokwi_id:     354858054593504257      # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        "Digital trainer kit"      # Project title
-  author:       "Sudeshna"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  " 2-input logic trainer with selectable gates and 7-segment display"      # One line description of what your project does
-  language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  title:        "Digital trainer kit"   # Project title
+  author:       "Sudeshna"              # Your name
+  discord:      ""                      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "2-input logic trainer with selectable gates and 7-segment display" # One line description of what your project does
+  language:     "Wokwi"                 # other examples include SystemVerilog, Amaranth, VHDL, etc
+  clock_hz:     0                       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
-  tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
-
+  tiles: "1x1"                          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
- # Inputs
-ui[0]: "IN0"         # Input switch A
-ui[1]: "IN1"         # Input switch B
-ui[2]: "IN2"      # Selection bit 0 (LSB)
-ui[3]: "IN3"      # Selection bit 1
-ui[4]: "IN4"     # Selection bit 2 (MSB)
-ui[5]: "IN5"      # +5V supply
-ui[6]: "IN6"       # Ground
-ui[7]: "IN7"        # Not connected / Reserved
+  # Inputs
+  ui[0]: "IN0"   # Input switch A
+  ui[1]: "IN1"   # Input switch B
+  ui[2]: "IN2"   # Selection bit 0 (LSB)
+  ui[3]: "IN3"   # Selection bit 1
+  ui[4]: "IN4"   # Selection bit 2 (MSB)
+  ui[5]: "IN5"   # +5V supply
+  ui[6]: "IN6"   # Ground
+  ui[7]: "IN7"   # Not connected / Reserved
 
-# Outputs
-uo[0]: "OUT0"        # Selected logic output
-uo[1]: "OUT1"    # 7-segment segment a
-uo[2]: "OUT2"     # segment b
-uo[3]: "OUT3"     # segment c
-uo[4]: "OUT4"     # segment d
-uo[5]: "OUT5"     # segment e
-uo[6]: "OUT6"     # segment f
-uo[7]: "OUT7"     # segment g
-
+  # Outputs
+  uo[0]: "OUT0"  # Selected logic output
+  uo[1]: "OUT1"  # 7-segment segment a
+  uo[2]: "OUT2"  # segment b
+  uo[3]: "OUT3"  # segment c
+  uo[4]: "OUT4"  # segment d
+  uo[5]: "OUT5"  # segment e
+  uo[6]: "OUT6"  # segment f
+  uo[7]: "OUT7"  # segment g
 
   # Bidirectional pins
   uio[0]: ""

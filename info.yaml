@@ -1,10 +1,10 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     0       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        ""      # Project title
-  author:       ""      # Your name
+  wokwi_id:     354858054593504257      # Set this to the ID of your Wokwi project (the number from the project's URL)
+  title:        "Digital trainer kit"      # Project title
+  author:       "Sudeshna"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  description:  " 2-input logic trainer with selectable gates and 7-segment display"      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
@@ -15,25 +15,26 @@ project:
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
-  # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
-  ui[4]: ""
-  ui[5]: ""
-  ui[6]: ""
-  ui[7]: ""
+ # Inputs
+ui[0]: A         # Input switch A
+ui[1]: B         # Input switch B
+ui[2]: SEL0      # Selection bit 0 (LSB)
+ui[3]: SEL1      # Selection bit 1
+ui[4]: SEL2      # Selection bit 2 (MSB)
+ui[5]: VCC       # +5V supply
+ui[6]: GND       # Ground
+ui[7]: NC        # Not connected / Reserved
 
-  # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
-  uo[7]: ""
+# Outputs
+uo[0]: Y         # Selected logic output
+uo[1]: SEG_A     # 7-segment segment a
+uo[2]: SEG_B     # segment b
+uo[3]: SEG_C     # segment c
+uo[4]: SEG_D     # segment d
+uo[5]: SEG_E     # segment e
+uo[6]: SEG_F     # segment f
+uo[7]: SEG_G     # segment g
+
 
   # Bidirectional pins
   uio[0]: ""

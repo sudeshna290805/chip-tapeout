@@ -1,38 +1,7 @@
-![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/wokwi_test/badge.svg) ![](../../workflows/fpga/badge.svg)
+Project Title: Digital Trainer Kit — 2-input logic trainer with selectable gates and 7-segment display (For SRM Institute of Science and Technology, Digital Electronics Lab)
 
-# Tiny Tapeout Wokwi Project Template
+Objective: To design and implement a compact digital trainer kit that allows students to experiment with basic combinational logic and observe results on a 7-segment display. The kit shall provide two input switches, an 8×1 selection mechanism to choose common logic functions (AND, OR, NOT, NAND, NOR, XOR, XNOR, Reserved), and hardware-only decoding to display the selected function’s output as a visible digit (0 or 1) on a seven-segment display. The kit is intended for hands-on learning, demonstration, and lab experiments in the SRM IST Digital Electronics course.
 
-- [Read the documentation for project](docs/info.md)
+Functionality: The digital trainer kit takes two inputs (A, B) and, using selection lines (SEL), generates the output of different logic gates (AND, OR, NOT, NAND, NOR, XOR, XNOR). The selected output (Y) is shown on a 7-segment display, where 0 displays as digit 0 and 1 displays as digit 1.
 
-## What is Tiny Tapeout?
-
-Tiny Tapeout is an educational project that aims to make it easier and cheaper than ever to get your digital and analog designs manufactured on a real chip.
-
-To learn more and get started, visit https://tinytapeout.com.
-
-## Wokwi Projects
-
-Edit the [info.yaml](info.yaml) and change the `wokwi_id` to the ID of your Wokwi project. You can find the ID in the URL of your project, it's the big number after `wokwi.com/projects/`.
-
-The GitHub action will automatically fetch the digital netlist from Wokwi and build the ASIC files.
-
-## Enable GitHub actions to build the results page
-
-- [Enabling GitHub Pages](https://tinytapeout.com/faq/#my-github-action-is-failing-on-the-pages-part)
-
-## Resources
-
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-- [Build your design locally](https://www.tinytapeout.com/guides/local-hardening/)
-
-## What next?
-
-- [Submit your design to the next shuttle](https://app.tinytapeout.com/).
-- Edit [this README](README.md) and explain your design, how it works, and how to test it.
-- Share your project on your social network of choice:
-  - LinkedIn [#tinytapeout](https://www.linkedin.com/search/results/content/?keywords=%23tinytapeout) [@TinyTapeout](https://www.linkedin.com/company/100708654/)
-  - Mastodon [#tinytapeout](https://chaos.social/tags/tinytapeout) [@matthewvenn](https://chaos.social/@matthewvenn)
-  - X (formerly Twitter) [#tinytapeout](https://twitter.com/hashtag/tinytapeout) [@tinytapeout](https://twitter.com/tinytapeout)
+Pin Description: VCC – +5V supply GND – Ground A, B – Input switches SEL[2:0] – Gate selection lines Y – Output of selected logic function SEG_A to SEG_G – Seven segment display pins COM – Common cathode of display (to GND)

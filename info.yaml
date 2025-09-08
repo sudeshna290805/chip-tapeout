@@ -21,9 +21,9 @@ ui[1]: "IN1"         # Input switch B
 ui[2]: "IN2"      # Selection bit 0 (LSB)
 ui[3]: "IN3"      # Selection bit 1
 ui[4]: "IN4"     # Selection bit 2 (MSB)
-ui[5]: ""      # +5V supply
-ui[6]: ""       # Ground
-ui[7]: ""        # Not connected / Reserved
+ui[5]: "IN5"      # +5V supply
+ui[6]: "IN6"       # Ground
+ui[7]: "IN7"        # Not connected / Reserved
 
 # Outputs
 uo[0]: "OUT0"        # Selected logic output
